@@ -1,0 +1,14 @@
+{
+  "name": "fluency-flow",
+  "private": true,
+  "description": "كلام وطلاقة (Fluency Flow). The published app needs no installation; this file is for local checks.",
+  "scripts": {
+    "build": "node scripts/build-pwa.cjs",
+    "check": "node scripts/build-pwa.cjs --check",
+    "test": "node tests/goals.cjs && node tests/program.cjs && node tests/progress.cjs && node tests/beats.cjs",
+    "test:browser": "node tests/browser.cjs && node tests/behavior.cjs && node tests/pictures.cjs && node tests/pwa-browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
